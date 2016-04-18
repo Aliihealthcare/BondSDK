@@ -1,0 +1,157 @@
+{
+  "name": "BondSDK",
+  "version": "0.0.1.8",
+  "summary": "BondSDK - Connect your users to a licensed doctor whenever, wherever.",
+  "homepage": "http://getbondsdk.com/",
+  "authors": {
+    "Patrick Childers": "patrick@aliihealthcare.com",
+    "Peter DeWeese": "peter@dewee.se"
+  },
+  "license": {"type":"proprietary"},
+  "source": {
+    "git": "git@github.com:Aliihealthcare/Bond-iOS.git",
+    "tag": "sdk0.0.1.8"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  }
+  ,
+  "source_files": [
+    "alii-healthcare-ios/Classes/BondSDK/*.{h,m}",
+    "alii-healthcare-ios/Classes/Libs/**/*.{d,h,m}",
+    "alii-healthcare-ios/Classes/Models/*.{d,h,m}",
+    "alii-healthcare-ios/Classes/UX/Categories/NSArray+BD.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Categories/NSAttributedString+BD.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Categories/NSData+BD.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Categories/NSDictionary+BD.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Categories/NSObject+BD.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Categories/NSString+BD.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Categories/UIColor+BD.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Categories/UIScrollView+BD.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Categories/UIView+BD.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Categories/UIViewController+BD.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Views/*.{d,h,m}",
+    "alii-healthcare-ios/Classes/Pod/*.{d,h,m}",
+    "alii-healthcare-ios/Classes/Managers/BDAppointmentManager.{h,m}",
+    "alii-healthcare-ios/Classes/Managers/BDBaseAPIManager.{h,m}",
+    "alii-healthcare-ios/Classes/Managers/BDCardManager.{h,m}",
+    "alii-healthcare-ios/Classes/Managers/BDCustomerManager.{h,m}",
+    "alii-healthcare-ios/Classes/Managers/BDLocationManager.{h,m}",
+    "alii-healthcare-ios/Classes/Managers/BDPusherManager.{h,m}",
+    "alii-healthcare-ios/Classes/Managers/BDTransactionManager.{h,m}",
+    "alii-healthcare-ios/Classes/Managers/BDVersionManager.{h,m}",
+    "alii-healthcare-ios/Classes/Managers/BDConversionsManager.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDForcedUpgradeViewController.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDPaymentViewController.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDEditPaymentViewController.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDCustomerViewController.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDAuthorizingViewController.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDWaitViewController.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDFeedbackVC.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDNoAnswerVC.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDCallViewController.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDSocialViewController.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDNavigationController.{h,m}",
+    "alii-healthcare-ios/Classes/UX/Controllers/BDTermsViewerViewController.{h,m}"
+  ],
+  "resource_bundles": {
+    "BondSDK": [
+      "alii-healthcare-ios/Resources/BondSDK/*.{storyboard,xcassets,png,plist}",
+      "alii-healthcare-ios/Resources/*.xcassets",
+      "alii-healthcare-ios/Classes/UX/Views/*.xib",
+      "alii-healthcare-ios/Resources/Sounds/Dial.mp3",
+      "alii-healthcare-ios/Resources/EULA.pdf"
+      ]
+  },
+  "prefix_header_file": "alii-healthcare-ios/BondSDK.pch",
+  "dependencies": {
+      "Stripe": [
+        "~> 6.0"
+      ],
+      "BoundUserDefaults": [
+        "0.1"
+      ],
+      "AsyncImageView": [
+        "1.5.1"
+      ],
+      "libPusher": [
+        "1.6"
+      ],
+      "SSKeychain": [
+        "1.2.3"
+      ],
+      "UIColor+Hex": [
+        "1.0.1"
+      ],
+      "ZAActivityBar": [
+        "0.1.1"
+      ],
+      "SKInnerShadowLayer": [
+        "1.1"
+      ],
+      "TPKeyboardAvoiding": [
+        "1.2.9"
+      ],
+      "Mixpanel": [
+      ],
+      "Reachability": [
+        "3.2"
+      ],
+      "SRMonthPicker": [
+        "0.2.10"
+      ],
+      "ApplePayStubs": [
+      ],
+      "CWPopup": [
+        "1.2.6"
+      ],
+      "OpenTok": [
+        "2.7.1-beta.1"
+      ],
+      "DJWStarRatingView": [
+        "0.0.4"
+      ],
+      "GoogleAnalytics": [
+        "3.14.0"
+      ],
+      "FBSDKShareKit": [
+        "4.6.0"
+      ],
+      "GoogleConversionTracking": [
+        "3.3.1"
+      ],
+      "FontAwesome": [
+        "4.5.0"
+      ],
+      "UIFontWDCustomLoader": [
+        "0.1.0"
+      ],
+      "ISO8601DateFormatter": [
+        "0.7"
+      ],
+      "GoogleConversionTracking": [
+        "3.2"
+      ]
+  },
+  "frameworks": [
+      "CoreLocation",
+      "AVFoundation",
+      "Social",
+      "Security",
+      "GLKit",
+      "PassKit",
+      "StoreKit",
+      "PassKit",
+      "CoreMedia",
+      "MessageUI",
+      "QuartzCore",
+      "CloudKit",
+      "GameKit",
+      "SystemConfiguration",
+      "CFNetwork",
+      "CoreGraphics",
+      "UIKit",
+      "Foundation"
+  ]
+}
